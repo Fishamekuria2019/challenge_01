@@ -5,7 +5,24 @@ This script showcases basic operations of Python Dicts.
 """
 
 # Initialize a dictionary containing top traders for each month in 2019
-top_traders_2019 = {"january": "Karen", "february": "Harold", "march": "Sam"}
+top_traders_2019 = [
+    "Karen",
+    True,
+     10,
+     25.5
+    ]
+top_traders_2019 = {
+    "january": "Karen",
+    "february": "Harold",
+    "march": {
+        "name": "Karen",
+        "age": 20,
+        "grade": ["A", "B", "A+"],
+        "Pass": True
+    }
+}
+
+print("Age is ", top_traders_2019["march"]["age"])
 
 print()
 print(f"Dictionary: {top_traders_2019}")
