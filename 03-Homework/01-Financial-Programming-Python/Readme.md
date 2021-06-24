@@ -30,7 +30,7 @@ You'll then upload your final code to GitHub.
 
 ### Files
 
-[Module 1 Challenge Files](Challenge/Starter_Code.zip)
+[Module 1 Challenge Files](./Challenge/Starter_Code.zip)
 
 ### Instructions
 
