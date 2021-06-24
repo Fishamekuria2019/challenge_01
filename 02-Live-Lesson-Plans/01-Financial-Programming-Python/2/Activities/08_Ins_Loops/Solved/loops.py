@@ -72,6 +72,7 @@ for key in trading_pnl:
 net_pnl = 0.00
 
 for key in trading_pnl:
+    # net_pnl = trading_pnl[key]
     net_pnl += trading_pnl[key]
     print("Inside loop:", net_pnl)
 
