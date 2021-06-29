@@ -26,3 +26,34 @@ accounts = [
 
 
 # Create the `login` function for the ATM application.
+balance = 0
+
+def login(pin):
+    for x in accounts:
+        # x = {
+        #     "pin" : 269731,
+        #     "balance": 3258.42
+        # }
+        if pin==x["pin"]:
+
+            # continue
+            return x["balance"]
+    print("Wrong pin number, please try again")
+    return False
+
+
+def read_pin():
+    try:
+        pin = int(input("Please enter your pin number"))
+        if pin:
+            balance = login(pin)
+            return balance
+
+    except:
+        print("Error please enter digits only")
+    read_pin()
+    
+
+
+def check_balance():
+    return balance  
